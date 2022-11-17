@@ -1,0 +1,9 @@
+import { renderTheme } from '../../styles/render-theme'
+import { {{ properCase name }} } from './{{ snakeCase name }}'
+__importMock__
+
+describe('<{{ properCase name }} />', () => {
+  it('should render', () => {
+    renderTheme(<{{ properCase name }} __hasMock__ />)
+  })
+})

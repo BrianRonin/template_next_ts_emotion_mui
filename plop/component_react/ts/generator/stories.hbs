@@ -1,0 +1,17 @@
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { {{ properCase name }}, {{ camelCase name }}Props } from './{{ snakeCase name }}'
+__importMock__
+
+export default {
+  title: '{{ titleStorybook }}',
+  component: {{ properCase name }},
+  args: __hasMock__
+} as Meta
+
+ export const Template: Story<{{ camelCase name }}Props > = (args) => <{{ properCase name }} {...args} />
+
+Template.parameters = {
+  backgrounds: {
+    default: 'light'
+  },
+}
